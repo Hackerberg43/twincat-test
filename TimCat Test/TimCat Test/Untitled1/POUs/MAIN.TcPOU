@@ -1,13 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1">
-  <POU Name="MAIN" Id="{6f3d5839-1e33-4585-ad06-48a190c42c62}">
+  <POU Name="MAIN" Id="{6f3d5839-1e33-4585-ad06-48a190c42c62}" SpecialFunc="None">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
+	n : BOOL;
 END_VAR
-]]>
-    </Declaration>
+]]></Declaration>
     <Implementation>
-      <ST><![CDATA[]]></ST>
+      <ST><![CDATA[n:=1;
+]]></ST>
     </Implementation>
   </POU>
 </TcPlcObject>
